@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
 
 public class MainApp extends JFrame {
 
@@ -45,11 +46,13 @@ public class MainApp extends JFrame {
 		contentPane.setLayout(null);
 		
 		jTxtName = new JTextField();
+		jTxtName.setHorizontalAlignment(SwingConstants.CENTER);
 		jTxtName.setBounds(66, 84, 299, 20);
 		contentPane.add(jTxtName);
 		jTxtName.setColumns(10);
 		
 		JLabel jLblName = new JLabel("");
+		jLblName.setHorizontalAlignment(SwingConstants.CENTER);
 		jLblName.setBounds(66, 115, 299, 14);
 		contentPane.add(jLblName);
 		
